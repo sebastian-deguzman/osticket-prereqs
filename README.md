@@ -50,8 +50,9 @@ We will use the files in this folder to install osTicket and some of the depende
 
 ![Annotation 2025-04-25 013829](https://github.com/user-attachments/assets/c95beeb2-c2db-4852-a70c-5f8c149f676f)
 
+From here were going to enable IIS (internet information services) to do this, control panel -> programs -> programs and features >turn windows features on or off. Once clicked we are going to select IIS / world wide web services / applicaiton development features / CGI
 
-
+![Annotation 2025-04-25 015544](https://github.com/user-attachments/assets/c70a06f1-2d49-462e-a5ee-32c660f4dd49)
 
 
 
