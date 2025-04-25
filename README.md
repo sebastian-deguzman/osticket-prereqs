@@ -31,6 +31,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 Hi there and welcome to my in-depth tutorial on how to build a ticketing system with osTicket! To being first we are going to create a virtual machine through Microsoft Azure's portal and we will proceed to create a virutal machine. We will name the VM "osTicket-Vm". Then we will select our image which will be Windows 10 pro, version 22H2 - x64 Gen2.
 
+![Screenshot 2025-04-24 184513](https://github.com/user-attachments/assets/9115db74-8537-42d1-a18d-7a244d3eb9c3)
+
 
 From here, we are going to use 4vcpus
 -Usename: Labuser / password: Cybersecurity1 -> 
@@ -39,13 +41,14 @@ From here, we are going to use 4vcpus
 
 ![Screenshot 2025-04-23 210116](https://github.com/user-attachments/assets/1a1001d5-f603-47fd-a368-1f2191173203)
 
-We are now going to deploy our Virtual machine and login through remote desktop (windows). To do this we will extract public IP address from the VM and enter the credentials we made earlier.
+We are now going to deploy our Virtual machine and login through remote desktop (RDP). To do this we will extract public IP address from the VM and enter the credentials we made earlier.
 
-![Screenshot 2025-04-23 210657](https://github.com/user-attachments/assets/bcc5e339-a69b-46cb-b6a0-b7102b7ce9f0)
+![Screenshot 2025-04-24 184720](https://github.com/user-attachments/assets/ffa860b8-a80c-4c03-a39b-78ed5ccd8666)
 
 Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
 We will use the files in this folder to install osTicket and some of the dependencies.
 
+![Annotation 2025-04-25 013829](https://github.com/user-attachments/assets/c95beeb2-c2db-4852-a70c-5f8c149f676f)
 
 
 
