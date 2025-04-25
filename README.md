@@ -26,7 +26,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-Hi there and welcome to my in-depth tutorial on how to build a ticketing system with osTicket! To being first we are going to create a virtual machine through Microsoft Azure's portal and we will proceed to create a virutal machine. We will name the VM "osTicket-Vm". Then we will select our image which will be Windows 10 pro, version 22H2 - x64 Gen2.
+Hi there and welcome to my in-depth tutorial on how to build a ticketing system with osTicket! To begin, first we are going to create a virtual machine through Microsoft Azure's portal and we will proceed to create a virutal machine. We will name the VM "osTicket-Vm". Then we will select our image which will be Windows 10 pro, version 22H2 - x64 Gen2.
 
 ![Screenshot 2025-04-24 184513](https://github.com/user-attachments/assets/9115db74-8537-42d1-a18d-7a244d3eb9c3)
 
