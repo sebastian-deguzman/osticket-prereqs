@@ -82,5 +82,55 @@ After this is completed, run IIS manager as an administrator and register the PH
 
 ![Annotation 2025-04-25 022417](https://github.com/user-attachments/assets/18cd5872-4fd3-4412-86c2-cf1c46e433a7)
 
+Now, from the Os installation files, we will extract the osTciket-v.1.15.8 creating a new folder in the file. we will now proceed to copy the "upload" file in to the c;\inetpub\wwwroot" and rename "upload" to "osTicket" like so.
 
+![Annotation 2025-04-25 032008](https://github.com/user-attachments/assets/3cda4dc6-57bc-4625-9a13-57403c2e8d49)
+
+We will go back to IIS as an administrator and restart the server. from osticket-vm > default > osTicket. Then double click "browse.*80 on the right side
+
+![Annotation 2025-04-25 032510](https://github.com/user-attachments/assets/589fdb62-82f3-44b0-81d0-004bd568a42c)
+
+
+Note some of the extentions arent enabled so we are now going to enable some extentions. we will be enabling the following PHP extentions: php_imap.dll , php_intl.dll, php_opache.dll
+
+![Annotation 2025-04-25 032942](https://github.com/user-attachments/assets/d130b76f-6b52-4862-8e45-620402a4e3e9)
+
+
+Now we will go back to C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php and rename it to ost-config.php (To: C:\inetpub\wwwroot\osTicket\include\ost-config.php)
+
+![Annotation 2025-04-25 033312](https://github.com/user-attachments/assets/9c261306-3a50-48b9-83eb-7c0ff7e2597e)
+
+Once renamed we need to assign permissions on the backend, to do this go to properties on ost-config.php > security > advanced > disable inheritance > remove all inherited permission from this object.
+
+![Annotation 2025-04-25 033605](https://github.com/user-attachments/assets/f53cb745-3c8d-428b-9dd4-9c2ffe630f04)
+
+
+Now it should be empty which we will now click add and enter "everyone" > check names > ok, then click full access. this should give everyone full access now.
+
+![Annotation 2025-04-25 033949](https://github.com/user-attachments/assets/0599c775-29d6-44e0-9699-09cbdd741ac4)
+
+on the osTicket set up in our browser we click continue. We assign a name of our choice to our helpdesk service. note the email address as admin user must be different than the system settings
+
+![Annotation 2025-04-25 034442](https://github.com/user-attachments/assets/b52e08b4-19f0-41a0-b6fb-358e4ed6ee24)
+
+Next well go back to the osticket install file and download HeidiSQL. open heidi and create a new session on the left annd the username and password well use root for both the username and password.
+
+![Annotation 2025-04-25 034933](https://github.com/user-attachments/assets/346c13c5-7ed1-4821-928d-9af6d91a57c1)
+
+
+Once openned well create a database and name it "osTicket"
+
+![Annotation 2025-04-25 035041](https://github.com/user-attachments/assets/d46ac779-4a84-4103-b738-8637f322b281)
+
+
+Now well go back to the browser under database settings and input the credentials we created earlier. so under 
+-SQL database = osTicket
+-SQL username = root
+-SQL password = root (note if it doesnt work, all letter must be capitalized)
+
+![Annotation 2025-04-25 035209](https://github.com/user-attachments/assets/bcac7f2d-27bf-4219-9a30-3a0605a25813)
+
+after clickinng install. Now our own osTicket helpdesk is installed!!! wooohooo!!
+
+![Annotation 2025-04-25 035421](https://github.com/user-attachments/assets/f8d089a3-d2a9-4953-955d-1acc0cbc7105)
 
