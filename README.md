@@ -52,24 +52,35 @@ We will use the files in this folder to install osTicket and some of the depende
 
 From here were going to enable IIS (internet information services) to do this, control panel -> programs -> programs and features >turn windows features on or off. Once clicked we are going to select IIS / world wide web services / applicaiton development features / CGI
 
-![Annotation 2025-04-25 015544](https://github.com/user-attachments/assets/c70a06f1-2d49-462e-a5ee-32c660f4dd49)
+![iis2025-04-25 022025](https://github.com/user-attachments/assets/2b2abce2-9a55-4838-b76c-ec41b64fa2a5)
+
+Now we are going to install “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+
+![php install 2025-04-25 020054](https://github.com/user-attachments/assets/193e2382-10ca-4638-8a40-9626b598db6b)
+
+From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
+
+![Annotation 2025-04-25 020335](https://github.com/user-attachments/assets/269678e9-f110-4476-b301-d25917d942da)
+
+Now from here were going to create the directory C:\PHP
+
+![Annotation 2025-04-25 020805](https://github.com/user-attachments/assets/0b0dd6bc-a1c7-4644-b2af-a536cfa59e90)
+
+From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
+
+![Annotation 2025-04-25 021003](https://github.com/user-attachments/assets/a9053efb-3df1-4498-998f-4a671294663d)
+
+Next we will install "VC_redist.x86.exe." from the osTicket installation.
+
+![Annotation 2025-04-25 021125](https://github.com/user-attachments/assets/509c023e-6d60-4bd1-837e-51d668a356c7)
+
+We will now install  MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the same folder. Make sure to click standard configuration and when asked for the username and password the credentials will be: username: root / password: root (make sure you do not mess this part up).
+
+![Annotation 2025-04-25 021227](https://github.com/user-attachments/assets/7a838788-43f2-4bf8-b12b-aa83a30aefa0)
+
+After this is completed, run IIS manager as an administrator and register the PHP from within the IIS. Once this step is completed we will "restart" it in the IIS manager.
+
+![Annotation 2025-04-25 022417](https://github.com/user-attachments/assets/18cd5872-4fd3-4412-86c2-cf1c46e433a7)
 
 
 
-
-
-
-
-
-
-
-
-
-
-<p>
-<img src="https://imgur.com/a/964ZeUH" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
